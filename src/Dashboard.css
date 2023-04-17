@@ -1,0 +1,43 @@
+th {
+    color: #ff5200;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+button {
+    background-color: #0062cc;
+    color: white;
+    font-weight: 600;
+    padding: 14px 20px;
+    font-size: 1rem;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    margin-left: 90%;
+    border-radius: 0.25rem;
+}
+
+thead {
+    border: 1px solid #99dbdb;
+}
+
+.container {
+    max-width: 98% !important;
+}
