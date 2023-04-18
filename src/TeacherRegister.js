@@ -47,7 +47,12 @@ const TeacherRegister = () => {
 
     return(
         <form class="m-10" onSubmit={handleSubmit}>
-            <div class="container">
+
+<div class="imgcontainer1 ">
+                {/* <img src={Avatar} alt="Avatar" class="avatar" /> */}
+                <h3>Teacher Registeration</h3>
+            </div>
+            <div class="container col-sm-6">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="userName" value={data.userName} onChange={handleChange} required />
 
@@ -60,7 +65,7 @@ const TeacherRegister = () => {
                 <label for="psw"><b>Mobile</b></label>
                 <input type="text" placeholder="Enter Mbile" name="mobile" value={data.mobile} onChange={handleChange} />
                 
-                <button type="submit">Register</button>
+                <button className='cancelbtn' type="submit">Register</button>
             </div>
         </form>
     );

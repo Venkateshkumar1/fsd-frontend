@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './StudentLogin.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Avatar from "./img_avatar2.png"
+
 
 function TeacherLogin() {
     const [data, setData] = useState({
@@ -44,17 +44,18 @@ function TeacherLogin() {
 
     return (
         <form class="m-10" onSubmit={handleSubmit}>
-            <div class="imgcontainer">
-                <img src={Avatar} alt="Avatar" class="avatar" />
+            <div class="imgcontainer ">
+                {/* <img src={Avatar} alt="Avatar" class="avatar" /> */}
+                <h3>Teacher Login</h3>
             </div>
 
-            <div class="container">
+            <div class="container col-sm-4">
                 <label for="uname"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="userName" value={data.userName} onChange={handleChange} required />
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="password" value={data.password} onChange={handleChange} />
-                <button type="submit">Login</button>
+                <button className='cancelbtn' type="submit">Login</button>
             </div>
         </form>
     );

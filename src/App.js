@@ -1,31 +1,40 @@
-import logo from './logo.svg';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+    
+     
+   
     <div className="App">
+       <div className='bg'>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <div style={{ 
+      backgroundImage: `url(${logo})` ,
+      backgroundRepeat: "no-repeat"
+      
+    }}> */}
+   
         <p>
           QUERY RESOLVING
-        </p>
-        <a
+        </p><br/>
+       <a
           className="App-link"
           href="http://localhost:3000/StudentLogin"
           target="_blank"
           rel="noopener noreferrer"
         >
           Student Login
-        </a>
-        <a
+        </a><br/><br/>
+       <a
           className="App-link"
           href="http://localhost:3000/StudentRegister"
           target="_blank"
           rel="noopener noreferrer"
         >
           Student Registeration
-        </a>
+        </a><br/><br/>
         <a
           className="App-link"
           href="http://localhost:3000/TeacherLogin"
@@ -33,8 +42,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Teacher Login
-        </a>
-        <a
+        </a><br/><br/>
+       <a
           className="App-link"
           href="http://localhost:3000/TeacherRegister"
           target="_blank"
@@ -42,8 +51,11 @@ function App() {
         >
           Teacher Registeration
         </a>
+      
       </header>
+      </div> 
     </div>
+    
   );
 }
 

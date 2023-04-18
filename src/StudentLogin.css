@@ -31,16 +31,22 @@ btn-login:hover {
 }
 
 /* Extra style for the cancel button (red) */
-.cancelbtn {
+.cancelbtn,btn-login1 {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    width: 100%;
 }
 
 /* Center the avatar image inside this container */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 200px 0 12px 0;
+}
+
+.imgcontainer1 {
+    text-align: center;
+    margin: 150px 0 12px 0;
 }
 
 /* Avatar image */
@@ -52,6 +58,7 @@ img.avatar {
 /* Add padding to containers */
 .container {
     padding: 16px;
+    background-color: #f1f1f1;
 }
 
 /* The "Forgot password" text */
@@ -68,6 +75,6 @@ span.psw {
     }
 
     .cancelbtn {
-        width: 100%;
+        float: left;
     }
 }
